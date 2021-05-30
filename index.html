@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav id="nav-principal">
+        <ul id="menu-principal">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre a Denise</a>
+            <ul class="dropdown">
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="gradeCurricular.html">Grade Curricular</a></li>
+                <li><a href="cv.html">Currículo Digital</a></li>
+            </ul></li>
+            <li><a href="#">Entre em contato</a>
+            <ul class="dropdown">
+                <li><a href="contatos.html">Contatos</a></li>           
+            </ul></li>
+            <li><a href="#">Redes Sociais</a>
+            <ul class="dropdown">
+                <li><a href="https://www.linkedin.com/in/devmaranhao/" alt="Linkedin">Linkedin</a></li>
+                <li><a href="https://github.com/devmaranhao" alt="GitHub">GitHub</a></li>
+            </ul></li>
+        </ul>
+    </nav><br>
+    <h1>Minha Indicação de Filmes</h1><br>
+    <h2>Em Cartaz:</h2><br><br>
+    <section class="filmes">
+        <h3>Mad Max: Estrada da Fúria</h3><br>
+        <img srcset="imagens/1madMax.jpg 360w,
+                    imagens/2madMax.jpg 480w,
+                    imagens/3madMax.jpg 800w,
+                    imagens/5madMax.jpg 1920w"
+            sizes="(max-width: 480px) 360px,
+                    (max-width: 800px) 480px,
+                    (max-width: 1280px) 800px,
+                    1280px"
+            src="imagens/5madMax.jpg"
+            alt="Filme Mad Max">
+        <ol>
+            <li>- Gênero: Ação e Aventura</li><br>
+            <li>- Ano: 2015</li><br>
+        </ol>
+        <br>
+        <h3>O Menino Que Descobriu O Vento</h3><br>
+        <img srcset="imagens/1oMeninoQueDescobriuVento.jpg 360w,
+                    imagens/2oMeninoQueDescobriuVento.jpg 480w,
+                    imagens/3oMeninoQueDescobriuVento.jpg 800w,
+                    imagens/5oMeninoQueDescobriuVento.jpg 1920w"
+            sizes="(max-width: 480px) 360px,
+                    (max-width: 800px) 480px,
+                    (max-width: 1280px) 800px,
+                    1280px"
+            src="imagens/5oMeninoQueDescobriuVento.jpg"
+            alt="Filme O Menino Que Descobriu O Vento">
+        <ol>
+            <li>- Gênero: Drama</li><br>
+            <li>- Ano: 2019</li><br>
+        </ol>
+    </section>
+
+</body>
+</html>

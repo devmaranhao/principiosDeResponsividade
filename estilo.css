@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+p {
+    line-height: 1.1em;
+}
+
+p+p {
+    text-indent: 1.5em;
+    margin-top: 1.5em;
+}
+
+#nav-principal {
+    position: relative;
+    font-family: monospace;
+    float: left;
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+}
+
+#menu-principal {
+    list-style: none;
+    padding-left: 0;
+}
+
+#menu-principal li {
+    background-color:rgb(230, 114, 6);
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#menu-principal li a {
+    color:#fff;
+    text-decoration: none;
+}
+
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: nome;
+    box-shadow: 0px 8px 16px 0px rgba(57, 57, 77, 0.2);
+}
+
+.dropdown li {
+    clear: both;
+    width: 100%;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    text-align: right;
+}
+
+#menu-principal li:hover,
+#menu-principal li:focus-within {
+    background-color: rgb(157, 23, 235);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#menu-principal li a:hover {
+    color:rgb(22, 247, 255);
+}
+
+/*Controla a exibição do dropdown*/
+#menu-principal li:hover>ul,
+#menu-principal li:focus-within>ul,
+.dropdown ul:hover,
+.dropdown ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.elementos {
+	font-weight: bold;
+}
+
+/*Ajustar o conteudo para Smartphones*/
+@media screen and (max-width:480px) {
+     body {
+         max-width: 480px;
+         font-size: 1.0em;
+     }
+
+    #menu-principal {
+        width: auto;
+        height: auto;
+        background-color: #704C14;
+    }
+
+    #menu-principal li {
+        background-color: tomato;
+        text-decoration: none;
+        width: 100%;
+        float: none;
+    }
+
+    #menu-principal  li a {
+        color:#FEC493;
+        text-align: left;
+        display: block;
+        outline: none;
+    }
+
+    #menu-principal li:hover,
+    #menu-principal li:focus-within,
+    #menu-principal li a:hover {
+        cursor: pointer;
+        font-weight: bold;
+        color: #AD7D2A;
+        background-color: #F8966B;
+        transition: 0.3s;
+        left: 10px;
+    }
+}

@@ -32,7 +32,6 @@ p+p {
 #menu-principal {
     list-style: none;
     padding-left: 0;
-    background-color: #F8966B;
 }
 
 #menu-principal li {
@@ -108,6 +107,7 @@ p+p {
     #menu-principal {
         width: auto;
         height: auto;
+	background-color: #F8966B;
     }
 
     #menu-principal li {

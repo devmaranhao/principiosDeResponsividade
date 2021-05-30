@@ -107,7 +107,6 @@ p+p {
     #menu-principal {
         width: auto;
         height: auto;
-        background-color: #704C14;
     }
 
     #menu-principal li {
@@ -129,7 +128,7 @@ p+p {
     #menu-principal li a:hover {
         cursor: pointer;
         font-weight: bold;
-        color: #AD7D2A;
+        color: #704C14;
         background-color: #F8966B;
         transition: 0.3s;
         left: 10px;
